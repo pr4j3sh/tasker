@@ -24,21 +24,31 @@ const tasks = [
   },
   {
     id: "5",
-    task: "Programming Language",
+    task: "Freelancing",
     isComplete: false,
   },
   {
     id: "6",
-    task: "Blog",
+    task: "Contributing",
     isComplete: false,
   },
   {
     id: "7",
-    task: "Apply",
+    task: "Programming Language",
     isComplete: false,
   },
   {
     id: "8",
+    task: "Blog",
+    isComplete: false,
+  },
+  {
+    id: "9",
+    task: "Apply",
+    isComplete: false,
+  },
+  {
+    id: "10",
     task: "Video",
     isComplete: false,
   },
