@@ -58,6 +58,35 @@ section {
   @apply flex flex-col gap-2;
 }
 
+.card {
+  @apply border border-gray-200 dark:border-gray-800 rounded-md p-4 flex flex-col gap-4 bg-gray-100 dark:bg-gray-900;
+}
+
+.card .card-heading {
+  @apply font-bold;
+}
+
+.checkbox {
+  @apply appearance-none border-2 rounded w-4 h-4 mr-2 bg-gray-200 border-gray-300 dark:bg-gray-700 dark:border-gray-800;
+}
+
+.checkbox:checked {
+  @apply bg-indigo-600 border-indigo-600 dark:bg-indigo-500 dark:border-indigo-400;
+}
+
+.checkbox:focus {
+  @apply ring-2 ring-indigo-500 dark:ring-indigo-300;
+}
+
+.checkbox:checked:focus {
+  @apply ring-indigo-700 dark:ring-indigo-400;
+}
+
+/* Optional: Add a hover state for better interaction */
+.checkbox:hover {
+  @apply border-gray-400 dark:border-gray-600;
+}
+
 footer {
   @apply py-4 flex items-center justify-between text-sm text-gray-700 dark:text-gray-400;
 }
