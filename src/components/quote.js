@@ -1,15 +1,17 @@
 import { API } from "../lib/consts";
-const text = await getQuote(API.QUOTES.URL, API.QUOTES.CONFIG);
 
-const component = `<article>
-        <blockquote>
-${text}
-        </blockquote>
-      </article>`;
+async function fetchAndDisplayQuote() {
+  const text = await getQuote(API.QUOTES.URL, API.QUOTES.CONFIG);
 
-const quote = document.getElementById("quote");
+  const component = `<article>
+          <blockquote>
+  ${text}
+          </blockquote>
+        </article>`;
 
-quote.innerHTML = component;
+  const quote = document.getElementById("quote");
+  quote.innerHTML = component;
+}
 
 async function getQuote(url, config) {
   try {
@@ -20,3 +22,5 @@ async function getQuote(url, config) {
     console.error(error);
   }
 }
+
+document.addEventListener("DOMContentLoaded", fetchAndDisplayQuote);
