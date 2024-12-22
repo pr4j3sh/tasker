@@ -13,3 +13,14 @@ export const AUTHOR = {
   TWITTER: "https://x.com/pr4j3sh",
   GITHUB: "https://github.com/pr4j3sh",
 };
+
+export const API = {
+  QUOTES: {
+    URL: "https://api.api-ninjas.com/v1/quotes",
+    CONFIG: {
+      headers: {
+        "X-Api-Key": import.meta.env.VITE_API_KEY,
+      },
+    },
+  },
+};
