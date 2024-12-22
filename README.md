@@ -1,3 +1,0 @@
-# tasker
-
-Doing daily tasks.
